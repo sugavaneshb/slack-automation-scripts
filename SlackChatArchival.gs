@@ -9,9 +9,12 @@ For every channel, repeat this:
 
 - On the menu click on Publish -> Deploy as Webapp and use it as the URL for outgoing webhook in slack
 
-- Register an Outgoing webhook with the above webapp URL and get the token .
+- Register an Outgoing webhook with the above webapp URL with the desired channel/configuration and get the token.
 
-- Update the sheet name, token values
+- Create a new sheet with a desired name. Create the columns 'Timestamp', 'Name', 'Chat Message' with corresponding name ranges.
+  Refer to above documentation on how to create named ranges.
+
+- Add the sheet name, token values to the map in this script.
 **/
 
 function doPost(request) {
